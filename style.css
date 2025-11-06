@@ -1,0 +1,83 @@
+body {
+	font-family: "Space Mono", monospace;
+	background-color: hsl(185, 41%, 84%);
+}
+
+#logo {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 6rem;
+}
+
+#main {
+	background-color: white;
+	border-radius: 25px;
+}
+
+#first-col {
+	padding: 4rem 3rem;
+	width: 30rem;
+}
+
+div.input-group-text {
+	border: none;
+}
+
+input.form-control {
+	border: none;
+	background-color: hsl(189, 47%, 97%);
+	text-align: end;
+	color: hsl(184, 14%, 56%);
+	font-weight: 700;
+	font-size: 1.25rem;
+}
+
+#input1 {
+	margin-bottom: 2rem;
+}
+
+label.form-label {
+	font-weight: 600;
+	font-size: 1rem;
+	color: hsl(186, 14%, 43%);
+	display: block !important;
+}
+
+#selectTip {
+	font-weight: 600;
+	font-size: 1rem;
+	color: hsl(186, 14%, 43%);
+	display: block !important;
+	margin-bottom: 1rem;
+}
+
+div.btn-group {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+button.btn {
+	width: 8rem;
+	font-weight: 700;
+	font-size: 1.5rem;
+}
+
+#btn1, #btn2, #btn3, #btn4, #btn5 {
+	color: white;
+	background-color: hsl(183, 100%, 15%);
+}
+
+#btn6 {
+	background-color: hsl(189, 47%, 97%);
+	color: hsl(186, 14%, 43%);
+}
+
+#row1 {
+	margin-bottom: 1rem;
+}
+
+#row2 {
+	margin-bottom: 3rem;
+}
