@@ -13,6 +13,7 @@ body {
 #main {
 	background-color: white;
 	border-radius: 25px;
+	width: 60rem;
 }
 
 #first-col {
@@ -64,7 +65,11 @@ button.btn {
 	font-size: 1.5rem;
 }
 
-#btn1, #btn2, #btn3, #btn4, #btn5 {
+#btn1,
+#btn2,
+#btn3,
+#btn4,
+#btn5 {
 	color: white;
 	background-color: hsl(183, 100%, 15%);
 }
@@ -80,4 +85,58 @@ button.btn {
 
 #row2 {
 	margin-bottom: 3rem;
+}
+
+#second-col {
+	padding: 2rem;
+}
+
+#secondColSection {
+	background-color:  hsl(183, 100%, 15%);
+	border-radius: 18px;
+	padding: 3rem 1rem;
+}
+
+#tipAmount, #total {
+	color: white;
+	font-size: 1rem;
+	font-weight: 500;
+}
+
+#person, #Person {
+	font-size: 0.85rem;
+	color: hsl(184, 14%, 56%);
+	font-weight: 600;
+}
+
+#priceSection {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 3rem;
+}
+
+#price, #price2 {
+	color: hsl(172, 67%, 45%);
+	font-size: 3rem;
+	font-weight: 550;
+}
+
+#priceSection2 {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 7rem;
+}
+
+#reset {
+	background-color: hsl(172, 67%, 45%);
+	color: hsl(183, 100%, 15%);
+	width: 21rem;
+}
+
+#buttonSection {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }

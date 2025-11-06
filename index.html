@@ -48,18 +48,30 @@
 					<input type="text" class="form-control" placeholder="0" name="num">
 				</div>
 			</div>
-			<div class="col-6">
-				<section class="container">
-					<span class="lead">Tip Amount</span>
-					<span class="lead">/ person</span>
-					<span class="lead">$0.00</span>
+			<div class="col-6" id="second-col">
+				<section class="container" id="secondColSection">
+					<section class="container" id="priceSection">
+						<section class="container d-inline">
+							<span class="lead d-block" id="tipAmount">Tip Amount</span>
+							<span class="lead d-block" id="person">/ person</span>
+						</section>
+						<section class="container d-inline">
+							<span class="lead" id="price">$0.00</span>
+						</section>
+					</section>
+					<section class="container" id="priceSection2">
+						<section class="container">
+							<span class="lead d-block" id="total">Total</span>
+							<span class="lead d-block" id="Person">/ person</span>
+						</section>
+						<section class="container">
+							<span class="lead" id="price2">$0.00</span>
+						</section>
+					</section>
+					<section class="container" id="buttonSection">
+						<button class="btn disabled" type="button" id="reset">RESET</button>
+					</section>
 				</section>
-				<section class="container">
-					<span class="lead">Total</span>
-					<span class="lead">/ person</span>
-					<span class="lead">$0.00</span>
-				</section>
-				<button class="btn bg-danger" type="button">RESET</button>
 			</div>
 		</div>
 	</section>
