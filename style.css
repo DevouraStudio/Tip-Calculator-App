@@ -8,12 +8,14 @@ body {
 	justify-content: center;
 	align-items: center;
 	margin-bottom: 6rem;
+	margin-top: 10rem;
 }
 
 #main {
 	background-color: white;
 	border-radius: 25px;
 	width: 60rem;
+	margin-bottom: 16rem;
 }
 
 #first-col {
@@ -25,13 +27,13 @@ div.input-group-text {
 	border: none;
 }
 
-input.form-control {
+#inputOne, #inputThree {
 	border: none;
 	background-color: hsl(189, 47%, 97%);
 	text-align: end;
 	color: hsl(184, 14%, 56%);
 	font-weight: 700;
-	font-size: 1.25rem;
+	font-size: 24px;
 }
 
 #input1 {
@@ -63,6 +65,7 @@ button.btn {
 	width: 8rem;
 	font-weight: 700;
 	font-size: 1.5rem;
+	border: none;
 }
 
 #btn1,
@@ -74,9 +77,14 @@ button.btn {
 	background-color: hsl(183, 100%, 15%);
 }
 
-#btn6 {
+#inputTwo {
 	background-color: hsl(189, 47%, 97%);
 	color: hsl(186, 14%, 43%);
+	width: 8rem;
+	font-weight: 700;
+	font-size: 24px;
+	text-align: end;
+	border: none;
 }
 
 #row1 {
@@ -92,18 +100,20 @@ button.btn {
 }
 
 #secondColSection {
-	background-color:  hsl(183, 100%, 15%);
+	background-color: hsl(183, 100%, 15%);
 	border-radius: 18px;
 	padding: 3rem 1rem;
 }
 
-#tipAmount, #total {
+#tipAmount,
+#total {
 	color: white;
 	font-size: 1rem;
 	font-weight: 500;
 }
 
-#person, #Person {
+#person,
+#Person {
 	font-size: 0.85rem;
 	color: hsl(184, 14%, 56%);
 	font-weight: 600;
@@ -116,7 +126,8 @@ button.btn {
 	margin-bottom: 3rem;
 }
 
-#price, #price2 {
+#price,
+#price2 {
 	color: hsl(172, 67%, 45%);
 	font-size: 3rem;
 	font-weight: 550;
@@ -140,3 +151,13 @@ button.btn {
 	justify-content: center;
 	align-items: center;
 }
+
+input.form-control::placeholder {
+	color: hsl(184, 14%, 56%);
+}
+
+button.btn:hover {
+	background-color: hsl(185, 41%, 84%) !important;
+	color: hsl(183, 100%, 15%) !important;
+}
+
