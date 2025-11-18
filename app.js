@@ -26,27 +26,25 @@ const inputGroupTwo = document.querySelector("#input2")
 
 const error = document.querySelector("#error")
 
-const resetFunction = function() {
-	inputOne.value = ""
-	custom.value = ""
-	inputThree.value = ""
-	price.textContent = "$0.00"
-	price2.textContent = "$0.00"
-	errorFive.style.display = "none"
-	errorSix.style.display = "none"
-	buttonOne.checked = false
-	buttonTwo.checked = false
-	buttonThree.checked = false
-	buttonFour.checked = false
-	buttonFive.checked = false
-	buttonOne.disabled = true
-	buttonTwo.disabled = true
-	buttonThree.disabled = true
-	buttonFour.disabled = true
-	buttonFive.disabled = true
-	reset.disabled = true
-	custom.disabled = true
-}
+const errorTwo = document.querySelector('#errorTwo')
+
+const errorThree = document.querySelector('#errorThree')
+
+const errorFour = document.querySelector('#errorFour')
+
+buttonOne.checked = false
+buttonTwo.checked = false
+buttonThree.checked = false
+buttonFour.checked = false
+buttonFive.checked = false
+buttonOne.disabled = true
+buttonTwo.disabled = true
+buttonThree.disabled = true
+buttonFour.disabled = true
+buttonFive.disabled = true
+reset.disabled = true
+custom.disabled = true
+
 
 inputOne.addEventListener("input", function () {
 	if (inputOne.value === "") {
@@ -59,6 +57,7 @@ inputOne.addEventListener("input", function () {
 		buttonFour.disabled = true
 		buttonFive.disabled = true
 		custom.disabled = true
+		reset.disabled = false
 	}
 	else if (parseInt(inputOne.value) <= 0) {
 		error.style.display = "inline"
@@ -70,6 +69,7 @@ inputOne.addEventListener("input", function () {
 		buttonFour.disabled = true
 		buttonFive.disabled = true
 		custom.disabled = true
+		reset.disabled = false
 	}
 	else {
 		if (inputThree.value !== "" && parseInt(inputThree.value) !== 0) {
@@ -81,9 +81,9 @@ inputOne.addEventListener("input", function () {
 			buttonFive.disabled = false
 			custom.disabled = false
 		}
-		reset.disabled = false
 		error.style.display = "none"
 		errorTwo.style.display = "none"
+		reset.disabled = false
 	}
 })
 
@@ -98,6 +98,7 @@ inputThree.addEventListener("input", function () {
 		buttonFour.disabled = true
 		buttonFive.disabled = true
 		custom.disabled = true
+		reset.disabled = false
 	}
 	else if (parseInt(inputThree.value) <= 0) {
 		errorThree.style.display = "inline"
@@ -109,6 +110,7 @@ inputThree.addEventListener("input", function () {
 		buttonFour.disabled = true
 		buttonFive.disabled = true
 		custom.disabled = true
+		reset.disabled = false
 	}
 	else {
 		if (inputOne.value !== "" && parseInt(inputOne.value) !== 0) {
@@ -120,9 +122,9 @@ inputThree.addEventListener("input", function () {
 			buttonFive.disabled = false
 			custom.disabled = false
 		}
-		reset.disabled = false
 		errorThree.style.display = "none"
 		errorFour.style.display = "none"
+		reset.disabled = false
 	}
 })
 
@@ -173,7 +175,29 @@ custom.addEventListener("change", function () {
 	buttonFive.checked = false
 })
 
-reset.addEventListener("click", resetFunction)
+reset.addEventListener("click", function () {
+	inputOne.value = ""
+	custom.value = ""
+	inputThree.value = ""
+	price.textContent = "$0.00"
+	price2.textContent = "$0.00"
+	error.style.display = "none"
+	errorTwo.style.display = "none"
+	errorThree.style.display = "none"
+	errorFour.style.display = "none"
+	buttonOne.checked = false
+	buttonTwo.checked = false
+	buttonThree.checked = false
+	buttonFour.checked = false
+	buttonFive.checked = false
+	buttonOne.disabled = true
+	buttonTwo.disabled = true
+	buttonThree.disabled = true
+	buttonFour.disabled = true
+	buttonFive.disabled = true
+	custom.disabled = true
+	this.disabled = true
+})
 
 inputOne.addEventListener("focus", function () {
 	inputGroupOne.style.border = "2px hsl(172, 67%, 45%) solid"
