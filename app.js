@@ -1,14 +1,14 @@
 const inputOne = document.querySelector("#inputOne")
 
-const buttonOne = document.querySelector("#btn1")
+const buttonOne = document.querySelector("#option1")
 
-const buttonTwo = document.querySelector("#btn2")
+const buttonTwo = document.querySelector("#option2")
 
-const buttonThree = document.querySelector("#btn3")
+const buttonThree = document.querySelector("#option3")
 
-const buttonFour = document.querySelector("#btn4")
+const buttonFour = document.querySelector("#option4")
 
-const buttonFive = document.querySelector("#btn5")
+const buttonFive = document.querySelector("#option5")
 
 const custom = document.querySelector("#inputTwo")
 
