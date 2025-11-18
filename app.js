@@ -26,13 +26,27 @@ const inputGroupTwo = document.querySelector("#input2")
 
 const error = document.querySelector("#error")
 
-buttonOne.disabled = true
-buttonTwo.disabled = true
-buttonThree.disabled = true
-buttonFour.disabled = true
-buttonFive.disabled = true
-custom.disabled = true
-reset.disabled = true
+const resetFunction = function() {
+	inputOne.value = ""
+	custom.value = ""
+	inputThree.value = ""
+	price.textContent = "$0.00"
+	price2.textContent = "$0.00"
+	errorFive.style.display = "none"
+	errorSix.style.display = "none"
+	buttonOne.checked = false
+	buttonTwo.checked = false
+	buttonThree.checked = false
+	buttonFour.checked = false
+	buttonFive.checked = false
+	buttonOne.disabled = true
+	buttonTwo.disabled = true
+	buttonThree.disabled = true
+	buttonFour.disabled = true
+	buttonFive.disabled = true
+	reset.disabled = true
+	custom.disabled = true
+}
 
 inputOne.addEventListener("input", function () {
 	if (inputOne.value === "") {
@@ -59,8 +73,6 @@ inputOne.addEventListener("input", function () {
 	}
 	else {
 		if (inputThree.value !== "" && parseInt(inputThree.value) !== 0) {
-			error.style.display = "none"
-			errorTwo.style.display = "none"
 			inputGroupOne.style.border = "2px hsl(172, 67%, 45%) solid"
 			buttonOne.disabled = false
 			buttonTwo.disabled = false
@@ -70,6 +82,8 @@ inputOne.addEventListener("input", function () {
 			custom.disabled = false
 		}
 		reset.disabled = false
+		error.style.display = "none"
+		errorTwo.style.display = "none"
 	}
 })
 
@@ -98,8 +112,6 @@ inputThree.addEventListener("input", function () {
 	}
 	else {
 		if (inputOne.value !== "" && parseInt(inputOne.value) !== 0) {
-			errorThree.style.display = "none"
-			errorFour.style.display = "none"
 			inputGroupTwo.style.border = "2px hsl(172, 67%, 45%) solid"
 			buttonOne.disabled = false
 			buttonTwo.disabled = false
@@ -109,6 +121,8 @@ inputThree.addEventListener("input", function () {
 			custom.disabled = false
 		}
 		reset.disabled = false
+		errorThree.style.display = "none"
+		errorFour.style.display = "none"
 	}
 })
 
@@ -152,24 +166,14 @@ custom.addEventListener("change", function () {
 	const totalPerPerson = (((parseInt(inputOne.value)) / (parseInt(inputThree.value))) + parseInt(tipPerPerson)).toFixed(2)
 	price.textContent = `$${tipPerPerson}`
 	price2.textContent = `$${totalPerPerson}`
-
+	buttonOne.checked = false
+	buttonTwo.checked = false
+	buttonThree.checked = false
+	buttonFour.checked = false
+	buttonFive.checked = false
 })
 
-reset.addEventListener("click", function () {
-	inputOne.value = ""
-	custom.value = ""
-	inputThree.value = ""
-	price.textContent = "$0.00"
-	price2.textContent = "$0.00"
-	errorFive.style.display = "none"
-	errorSix.style.display = "none"
-	buttonOne.disabled = true
-	buttonTwo.disabled = true
-	buttonThree.disabled = true
-	buttonFour.disabled = true
-	buttonFive.disabled = true
-	custom.disabled = true
-})
+reset.addEventListener("click", resetFunction)
 
 inputOne.addEventListener("focus", function () {
 	inputGroupOne.style.border = "2px hsl(172, 67%, 45%) solid"

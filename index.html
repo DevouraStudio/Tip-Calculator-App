@@ -21,7 +21,7 @@
 	</section>
 	<section class="container" id="main">
 		<div class="row">
-			<div class="col-6" id="first-col">
+			<div class="col-xl-6" id="first-col">
 				<div class="container" id="errorDiv">
 					<label for="bill" class="form-label">Bill</label>
 					<span class="lead" id="error">Can't be zero or less</span>
@@ -33,38 +33,33 @@
 						required>
 				</div>
 				<span class="lead" id="selectTip">Select Tip %</span>
-				<div role="group" class="btn-group" id="row1">
-					<div class="row">
-						<div class="col-4">
+				<section class="container buttonFlex">
+					<div role="group" class="btn-group" id="buttons">
+						<div class="container div">
 							<input type="radio" class="btn-check" name="options" id="option1" autocomplete="off">
 							<label class="btn" for="option1" id="label-1">5%</label>
 						</div>
-						<div class="col-4">
+						<div class="container div">
 							<input type="radio" class="btn-check" name="options" id="option2" autocomplete="off">
 							<label class="btn" for="option2" id="label-2">10%</label>
 						</div>
-						<div class="col-4">
+						<div class="container div">
 							<input type="radio" class="btn-check" name="options" id="option3" autocomplete="off">
 							<label class="btn" for="option3" id="label-3">15%</label>
 						</div>
-					</div>
-				</div>
-				<div role="group" class="btn-group" id="row2">
-					<div class="row">
-						<div class="col-4">
+						<div class="container div">
 							<input type="radio" class="btn-check" name="options" id="option4" autocomplete="off">
 							<label class="btn" for="option4" id="label-4">25%</label>
 						</div>
-						<div class="col-4">
+						<div class="container div">
 							<input type="radio" class="btn-check" name="options" id="option5" autocomplete="off">
 							<label class="btn" for="option5" id="label-5">50%</label>
 						</div>
-						<div class="col-4" id="inputTwoDiv">
+						<div class="container div" id="inputTwoDiv">
 							<input type="number" class="form-control" placeholder="Custom" id="inputTwo" min="0">
 						</div>
-
 					</div>
-				</div>
+				</section>
 				<div class="container" id="errorDivTwo">
 					<label for="num" class="form-label">Number of People</label>
 					<span class="lead" id="errorThree">Can't be zero or less</span>
@@ -76,14 +71,14 @@
 						min="0" required>
 				</div>
 			</div>
-			<div class="col-6" id="second-col">
+			<div class="col-xl-6" id="second-col">
 				<section class="container" id="secondColSection">
 					<section class="container" id="priceSection">
 						<section class="container d-inline">
 							<span class="lead d-block" id="tipAmount">Tip Amount</span>
 							<span class="lead d-block" id="person">/ person</span>
 						</section>
-						<section class="container d-inline">
+						<section class="container" id="priceFlex">
 							<span class="lead" id="price">$0.00</span>
 						</section>
 					</section>
@@ -92,7 +87,7 @@
 							<span class="lead d-block" id="total">Total</span>
 							<span class="lead d-block" id="Person">/ person</span>
 						</section>
-						<section class="container">
+						<section class="container" id="priceFlex2">
 							<span class="lead" id="price2">$0.00</span>
 						</section>
 					</section>

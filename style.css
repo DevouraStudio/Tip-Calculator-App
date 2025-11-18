@@ -57,10 +57,18 @@ label.form-label {
 	margin-bottom: 1rem;
 }
 
-div.btn-group {
+#buttons {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 1rem;
+	margin-bottom: 2.5rem;
+}
+
+div.div {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	padding: 0;
 }
 
 #label-1,
@@ -85,14 +93,7 @@ div.btn-group {
 	text-align: end;
 	border: none;
 	color: hsl(183, 100%, 15%);
-}
-
-#row1 {
-	margin-bottom: 1rem;
-}
-
-#row2 {
-	margin-bottom: 3rem;
+	text-align: center;
 }
 
 #second-col {
@@ -140,6 +141,13 @@ div.btn-group {
 	margin-bottom: 7rem;
 }
 
+#priceFlex,
+#priceFlex2 {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
 #reset {
 	width: 8rem;
 	font-weight: 700;
@@ -182,32 +190,32 @@ input.form-control::placeholder {
 	color: hsl(184, 14%, 56%);
 }
 
-#option1:checked + #label-1 {
+#option1:checked+#label-1 {
 	background-color: hsl(172, 67%, 45%);
 	color: hsl(183, 100%, 15%);
 }
 
-#option1:checked + #label-1 {
+#option1:checked+#label-1 {
 	background-color: hsl(172, 67%, 45%);
 	color: hsl(183, 100%, 15%);
 }
 
-#option2:checked + #label-2 {
+#option2:checked+#label-2 {
 	background-color: hsl(172, 67%, 45%);
 	color: hsl(183, 100%, 15%);
 }
 
-#option3:checked + #label-3 {
+#option3:checked+#label-3 {
 	background-color: hsl(172, 67%, 45%);
 	color: hsl(183, 100%, 15%);
 }
 
-#option4:checked + #label-4 {
+#option4:checked+#label-4 {
 	background-color: hsl(172, 67%, 45%);
 	color: hsl(183, 100%, 15%);
 }
 
-#option5:checked + #label-5 {
+#option5:checked+#label-5 {
 	background-color: hsl(172, 67%, 45%);
 	color: hsl(183, 100%, 15%);
 }
@@ -224,4 +232,35 @@ input.form-control::placeholder {
 
 input.form-control:focus {
 	box-shadow: none !important;
+}
+
+@media (min-width: 375px) and (max-width: 1200px) {
+	#main {
+		width: 96vw;
+		margin-bottom: 0;
+	}
+
+	#logo {
+		margin-top: 4rem;
+		margin-bottom: 3rem;
+	}
+
+	#first-col {
+		width: 100vw;
+	}
+
+	#buttons {
+		grid-template-columns: repeat(2, 1fr);
+		gap: 1rem;
+
+	}
+
+	#label-1,
+	#label-2,
+	#label-3,
+	#label-4,
+	#label-5,
+	#inputTwo {
+		width: 30vw;
+	}
 }
