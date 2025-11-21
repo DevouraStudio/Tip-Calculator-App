@@ -59,7 +59,7 @@ inputOne.addEventListener("input", function () {
 		custom.disabled = true
 		reset.disabled = false
 	}
-	else if (parseInt(inputOne.value) <= 0) {
+	else if (parseFloat(inputOne.value) <= 0) {
 		error.style.display = "inline"
 		errorTwo.style.display = "none"
 		inputGroupOne.style.border = "2px rgb(255, 115, 0) solid"
@@ -72,7 +72,7 @@ inputOne.addEventListener("input", function () {
 		reset.disabled = false
 	}
 	else {
-		if (inputThree.value !== "" && parseInt(inputThree.value) !== 0) {
+		if (inputThree.value !== "" && parseFloat(inputThree.value) !== 0) {
 			inputGroupOne.style.border = "2px hsl(172, 67%, 45%) solid"
 			buttonOne.disabled = false
 			buttonTwo.disabled = false
@@ -100,7 +100,7 @@ inputThree.addEventListener("input", function () {
 		custom.disabled = true
 		reset.disabled = false
 	}
-	else if (parseInt(inputThree.value) <= 0) {
+	else if (parseFloat(inputThree.value) <= 0) {
 		errorThree.style.display = "inline"
 		errorFour.style.display = "none"
 		inputGroupTwo.style.border = "2px rgb(255, 115, 0) solid"
@@ -113,7 +113,7 @@ inputThree.addEventListener("input", function () {
 		reset.disabled = false
 	}
 	else {
-		if (inputOne.value !== "" && parseInt(inputOne.value) !== 0) {
+		if (inputOne.value !== "" && parseFloat(inputOne.value) !== 0) {
 			inputGroupTwo.style.border = "2px hsl(172, 67%, 45%) solid"
 			buttonOne.disabled = false
 			buttonTwo.disabled = false
@@ -129,45 +129,45 @@ inputThree.addEventListener("input", function () {
 })
 
 buttonOne.addEventListener("click", function () {
-	const tipPerPerson = ((parseInt(inputOne.value) * 0.05) / parseInt(inputThree.value)).toFixed(2)
-	const totalPerPerson = (((parseInt(inputOne.value)) / (parseInt(inputThree.value))) + parseInt(tipPerPerson)).toFixed(2)
-	price.textContent = `$${tipPerPerson}`
-	price2.textContent = `$${totalPerPerson}`
+	const tipPerPerson = ((parseFloat(inputOne.value) * 0.05) / parseFloat(inputThree.value))
+	const totalPerPerson = (((parseFloat(inputOne.value)) / (parseFloat(inputThree.value))) + parseFloat(tipPerPerson))
+	price.textContent = `$${tipPerPerson.toFixed(2)}`
+	priceTwo.textContent = `$${totalPerPerson.toFixed(2)}`
 })
 
 buttonTwo.addEventListener("click", function () {
-	const tipPerPerson = ((parseInt(inputOne.value) * 0.1) / parseInt(inputThree.value)).toFixed(2)
-	const totalPerPerson = (((parseInt(inputOne.value)) / (parseInt(inputThree.value))) + parseInt(tipPerPerson)).toFixed(2)
-	price.textContent = `$${tipPerPerson}`
-	price2.textContent = `$${totalPerPerson}`
+	const tipPerPerson = ((parseFloat(inputOne.value) * 0.1) / parseFloat(inputThree.value))
+	const totalPerPerson = (((parseFloat(inputOne.value)) / (parseFloat(inputThree.value))) + parseFloat(tipPerPerson))
+	price.textContent = `$${tipPerPerson.toFixed(2)}`
+	priceTwo.textContent = `$${totalPerPerson.toFixed(2)}`
 })
 
 buttonThree.addEventListener("click", function () {
-	const tipPerPerson = ((parseInt(inputOne.value) * 0.15) / parseInt(inputThree.value)).toFixed(2)
-	const totalPerPerson = (((parseInt(inputOne.value)) / (parseInt(inputThree.value))) + parseInt(tipPerPerson)).toFixed(2)
-	price.textContent = `$${tipPerPerson}`
-	price2.textContent = `$${totalPerPerson}`
+	const tipPerPerson = ((parseFloat(inputOne.value) * 0.15) / parseFloat(inputThree.value))
+	const totalPerPerson = (((parseFloat(inputOne.value)) / (parseFloat(inputThree.value))) + tipPerPerson)
+	price.textContent = `$${tipPerPerson.toFixed(2)}`
+	priceTwo.textContent = `$${totalPerPerson.toFixed(2)}`
 })
 
 buttonFour.addEventListener("click", function () {
-	const tipPerPerson = ((parseInt(inputOne.value) * 0.25) / parseInt(inputThree.value)).toFixed(2)
-	const totalPerPerson = (((parseInt(inputOne.value)) / (parseInt(inputThree.value))) + parseInt(tipPerPerson)).toFixed(2)
-	price.textContent = `$${tipPerPerson}`
-	price2.textContent = `$${totalPerPerson}`
+	const tipPerPerson = ((parseFloat(inputOne.value) * 0.25) / parseFloat(inputThree.value))
+	const totalPerPerson = (((parseFloat(inputOne.value)) / (parseFloat(inputThree.value))) + parseFloat(tipPerPerson))
+	price.textContent = `$${tipPerPerson.toFixed(2)}`
+	priceTwo.textContent = `$${totalPerPerson.toFixed(2)}`
 })
 
 buttonFive.addEventListener("click", function () {
-	const tipPerPerson = ((parseInt(inputOne.value) * 0.5) / parseInt(inputThree.value)).toFixed(2)
-	const totalPerPerson = (((parseInt(inputOne.value)) / (parseInt(inputThree.value))) + parseInt(tipPerPerson)).toFixed(2)
-	price.textContent = `$${tipPerPerson}`
-	price2.textContent = `$${totalPerPerson}`
+	const tipPerPerson = ((parseFloat(inputOne.value) * 0.5) / parseFloat(inputThree.value))
+	const totalPerPerson = (((parseFloat(inputOne.value)) / (parseFloat(inputThree.value))) + parseFloat(tipPerPerson))
+	price.textContent = `$${tipPerPerson.toFixed(2)}`
+	priceTwo.textContent = `$${totalPerPerson.toFixed(2)}`
 })
 
-custom.addEventListener("change", function () {
-	const tipPerPerson = ((parseInt(inputOne.value) * (custom.value / 100)) / parseInt(inputThree.value)).toFixed(2)
-	const totalPerPerson = (((parseInt(inputOne.value)) / (parseInt(inputThree.value))) + parseInt(tipPerPerson)).toFixed(2)
-	price.textContent = `$${tipPerPerson}`
-	price2.textContent = `$${totalPerPerson}`
+custom.addEventListener("input", function () {
+	const tipPerPerson = ((parseFloat(inputOne.value) * (custom.value / 100)) / parseFloat(inputThree.value))
+	const totalPerPerson = (((parseFloat(inputOne.value)) / (parseFloat(inputThree.value))) + parseFloat(tipPerPerson))
+	price.textContent = `$${tipPerPerson.toFixed(2)}`
+	priceTwo.textContent = `$${totalPerPerson.toFixed(2)}`
 	buttonOne.checked = false
 	buttonTwo.checked = false
 	buttonThree.checked = false
@@ -180,7 +180,7 @@ reset.addEventListener("click", function () {
 	custom.value = ""
 	inputThree.value = ""
 	price.textContent = "$0.00"
-	price2.textContent = "$0.00"
+	priceTwo.textContent = "$0.00"
 	error.style.display = "none"
 	errorTwo.style.display = "none"
 	errorThree.style.display = "none"
@@ -208,7 +208,7 @@ inputOne.addEventListener("blur", function () {
 })
 
 inputThree.addEventListener("focus", function () {
-	inputGroupTwo.style.border = "2px hsl(172, 67%, 45%) solid"
+	inputGroupTwo.style.border = "2px rgb(255, 115, 0) solid"
 })
 
 inputThree.addEventListener("blur", function () {
