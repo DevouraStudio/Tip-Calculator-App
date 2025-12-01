@@ -17,7 +17,7 @@ This is a solution to the [Tip calculator app challenge on Frontend Mentor](http
 
 ## Overview
 
-### The challenge
+### The challenge:
 
 Users should be able to:
 
@@ -25,21 +25,21 @@ Users should be able to:
 - See hover states for all interactive elements on the page
 - Calculate the correct tip and total cost of the bill per person
 
-### Screenshot
+### Screenshots:
 
 ![Desktop](Screenshots/Screenshot.png)
 ![Desktop](Screenshots/Screenshot2.png)
 ![Desktop](Screenshots/Screenshot3.png)
 ![Mobile](Screenshots/Screenshot4.png)
 
-### Links
+### Links:
 
-- Solution URL: [Add solution URL here](https://github.com/DevouraStudio/Tip-Calculator-App)
-- Live Site URL: [Add live site URL here](https://devourastudio.github.io/Tip-Calculator-App/)
+- Solution URL: [solution URL](https://github.com/DevouraStudio/Tip-Calculator-App)
+- Live Site URL: [live site URL](https://devourastudio.github.io/Tip-Calculator-App/)
 
 ## My process
 
-### Built with
+### Built with:
 
 - Semantic HTML5 markup
 - Flexbox
@@ -50,7 +50,7 @@ Users should be able to:
 - Javascript form validation
 - [Bootstrap](https://getbootstrap.com/) - CSS Framework
 
-### What I learned
+### What I learned:
 
 <p style="text-align: justify;">
 "Well, This Project Was A Highly Challenging And Detailed Undertaking For Me. As It Turns Out, This Was The First Junior-Level Project I Have Ever Completed. Throughout This Project, I Encountered More Issues And Challenges Than Ever Before; However, I Was Fortunately Able To Resolve Them With The Assistance Of Artificial Intelligence (For Which I Am Grateful) And Successfully Finalize The Project.  
@@ -149,7 +149,7 @@ buttonOne.addEventListener("click", function () {
 })
 ```
 
-### Continued development
+### Continued development:
 
 <p style="text-align: justify;">
 Therefore, In Future Work And Upcoming Projects, I Intend To Utilize JavaScript More Extensively, As I Believe It Is A Programming Language With Significant Potential For Managing And Enhancing Web Pages.  
@@ -157,18 +157,17 @@ I Will Also Continue Developing My Expertise In Bootstrap And Aim To Incorporate
 Furthermore, In Relation To JavaScript, I Plan To Study Its Most Prominent And Widely Used Library, Known As React. By Mastering This Library, I Will Officially Achieve The Status Of A Fully Competent Front-End Developer—A Goal I Have Aspirated To Since Childhood.
 </p>
 
-### Useful resources
+### Useful resources:
 
-- [MDN](https://developer.mozilla.org/en-US/) - "During This Project, I Frequently Referred to the Mozilla Developer Network (MDN) Website as a Trusted Resource for Learning and Clarifying HTML, CSS, and JavaScript. MDN Provided Clear Documentation, Practical Examples, and Best Practices That Helped Me Solve Challenges More Efficiently. Using MDN Not Only Improved My Technical Accuracy but Also Strengthened My Confidence in Applying Modern Web Standards to My Work."
+- [MDN](https://developer.mozilla.org/en-US/) - "During This Project, I Frequently Referred To The Mozilla Developer Network (MDN) Website As A Trusted Resource For Learning And Clarifying HTML, CSS, and JavaScript. MDN Provided Clear Documentation, Practical Examples, And Best Practices That Helped Me Solve Challenges More Efficiently. Using MDN Not Only Improved My Technical Accuracy But Also Strengthened My Confidence In Applying Modern Web Standards To My Work."
 
-- [Cluade](https://claude.ai/) - "I want to be transparent that I developed this project with assistance from Claude, an AI assistant by Anthropic. I used Claude to help with coding, problem-solving, and refining various aspects of the implementation, while I directed the vision, made the key decisions, and shaped the final product. I believe in being upfront about using AI tools in my workflow—it's become a valuable part of modern development, allowing me to work more efficiently and explore better solutions. I see this collaboration similarly to using any other development resource, where the skill is in effectively leveraging tools while maintaining understanding and control of what's being built."
+- [Cluade](https://claude.ai/) - "I Want To Be Transparent That I Developed This Project With Assistance From Claude, An Ai Assistant By Anthropic. I Used Claude To Help With Coding, Problem-Solving, And Refining Various Aspects Of The Implementation, While I Directed The Vision, Made The Key Decisions, And Shaped The Final Product. I Believe In Being Upfront About Using Ai Tools In My Workflow—It's Become A Valuable Part Of Modern Development, Allowing Me To Work More Efficiently And Explore Better Solutions. I See This Collaboration Similarly To Using Any Other Development Resource, Where The Skill Is In Effectively Leveraging Tools While Maintaining Understanding And Control Of What's Being Built."
 
-- [Bootstrap](https://getbootstrap.com/) - "In This Project, I Utilized Bootstrap to Streamline the Design Process and Enhance the Visual Appeal of My Pages. By Leveraging Bootstrap’s Pre-Built Components, Utility Classes, and Customization Options, I Was Able to Maintain Consistent Styling, Organize Content Effectively, and Apply Modern Web Design Techniques More Efficiently. Using Bootstrap Helped Me Focus on Creativity and Attention to Detail While Building the Project."
+- [Bootstrap](https://getbootstrap.com/) - "In This Project, I Utilized Bootstrap To Streamline the Design Process And Enhance The Visual Appeal Of My Pages. By Leveraging Bootstrap’s Pre-Built Components, Utility Classes, And Customization Options, I Was Able To Maintain Consistent Styling, Organize Content Effectively, and Apply Modern Web Design Techniques More Efficiently. Using Bootstrap Helped Me Focus On Creativity And Attention To Detail While Building The Project."
 
 ## Author
 
 - Website - [DevouraStudio](https://www.devoura.ir)
 - Frontend Mentor - [@DevouraStudio](https://www.frontendmentor.io/profile/DevouraStudio)
-- Dribble - [@DevouraStudio](https://www.dribbble.com/DevouraStudio)
 - Github - [@DevouraStudio](https://www.github.com/DevouraStudio)
 - Codepen - [@DevouraStudio](https://www.codepen.io/DevouraStudio)
