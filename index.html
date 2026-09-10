@@ -12,35 +12,60 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
 		rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 	<section class="container">
+	<section class="container" id="logo">
+		<img src="svg-files/logo.svg" alt="Logo">
+	</section>
+	<section class="container" id="main">
 		<div class="row">
 			<div class="col-6">
 				<div class="input-group">
 					<label for="bill" class="form-label">Bill</label>
 					<div class="input-group-text"><img src="svg-files/icon-dollar.svg" alt="Dollar Icon"></div>
+			<div class="col-6" id="first-col">
+				<label for="bill" class="form-label">Bill</label>
+				<div class="input-group" id="input1">
+					<div class="input-group-text"><img src="svg-files/icon-dollar.svg" alt="Dollar Icon"></div>
 					<input type="text" class="form-control" placeholder="0" name="bill">
 				</div>
-				<span class="lead">Select Tip %</span>
-				<div role="group" class="btn-group">
+				<span class="lead" id="selectTip">Select Tip %</span>
+				<div role="group" class="btn-group" id="row1">
 					<div class="row">
-						<div class="col-4"><button class="btn">5%</button></div>
-						<div class="col-4"><button class="btn">10%</button></div>
-						<div class="col-4"><button class="btn">15%</button></div>
-					</div>
-					<div class="row">
-						<div class="col-4"><button class="btn">25%</button></div>
-						<div class="col-4"><button class="btn">50%</button></div>
-						<div class="col-4"><button class="btn">Custom</button></div>
+						<div class="col-4"><button class="btn" type="button" id="btn1">5%</button></div>
+						<div class="col-4"><button class="btn" type="button" id="btn2">10%</button></div>
+						<div class="col-4"><button class="btn" type="button" id="btn3">15%</button></div>
 					</div>
 				</div>
+				<div role="group" class="btn-group" id="row2">
+					<div class="row">
+						<div class="col-4"><button class="btn" type="button" id="btn4">25%</button></div>
+						<div class="col-4"><button class="btn" type="button" id="btn5">50%</button></div>
+						<div class="col-4"><button class="btn" type="button" id="btn6">Custom</button></div>
+					</div>
+				</div>
+				<label for="num" class="form-label">Number of People</label>
 				<div class="input-group">
 					<label for="num" class="form-label">Number Of People</label>
 					<div class="input-group-text"><img src="svg-files/icon-person.svg" alt="Person Icon"></div>
 					<input type="text" class="form-control" placeholder="0" name="num">
 				</div>
+			</div>
+			<div class="col-6">
+				<section class="container">
+					<span class="lead">Tip Amount</span>
+					<span class="lead">/ person</span>
+					<span class="lead">$0.00</span>
+				</section>
+				<section class="container">
+					<span class="lead">Total</span>
+					<span class="lead">/ person</span>
+					<span class="lead">$0.00</span>
+				</section>
+				<button class="btn bg-danger" type="button">RESET</button>
 			</div>
 		</div>
 	</section>
