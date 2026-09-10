@@ -32,7 +32,6 @@ div.input-group-text {
 	border: none;
 	background-color: hsl(189, 47%, 97%);
 	text-align: end;
-	color: hsl(184, 14%, 56%);
 	font-weight: 700;
 	font-size: 24px;
 	color: hsl(183, 100%, 15%);
@@ -40,6 +39,7 @@ div.input-group-text {
 
 #input1 {
 	margin-bottom: 2rem;
+	width: 27rem;
 }
 
 label.form-label {
@@ -96,6 +96,10 @@ div.div {
 	text-align: center;
 }
 
+#input2 {
+	width: 27rem;
+}
+
 #second-col {
 	padding: 2rem;
 }
@@ -109,13 +113,13 @@ div.div {
 #tipAmount,
 #total {
 	color: white;
-	font-size: 1rem;
-	font-weight: 500;
+	font-size: 1.5rem;
+	font-weight: 600;
 }
 
 #person,
 #Person {
-	font-size: 0.85rem;
+	font-size: 1rem;
 	color: hsl(184, 14%, 56%);
 	font-weight: 600;
 }
@@ -149,13 +153,13 @@ div.div {
 }
 
 #reset {
-	width: 8rem;
 	font-weight: 700;
 	font-size: 1.5rem;
 	border: none;
 	background-color: hsl(172, 67%, 45%);
 	color: hsl(183, 100%, 15%);
 	width: 21rem;
+	height: 3.25rem;
 }
 
 #buttonSection {
@@ -220,6 +224,10 @@ input.form-control::placeholder {
 	color: hsl(183, 100%, 15%);
 }
 
+#reset:disabled {
+	background-color: hsl(186, 14%, 43%);
+}
+
 #label-1:hover,
 #label-2:hover,
 #label-3:hover,
@@ -236,7 +244,7 @@ input.form-control:focus {
 
 @media (min-width: 375px) and (max-width: 1200px) {
 	#main {
-		width: 96vw;
+		width: 100vw;
 		margin-bottom: 0;
 	}
 
@@ -247,12 +255,16 @@ input.form-control:focus {
 
 	#first-col {
 		width: 100vw;
+		height: 33rem;
+	}
+
+	label.form-label {
+		font-size: 1.25rem;
 	}
 
 	#buttons {
 		grid-template-columns: repeat(2, 1fr);
 		gap: 1rem;
-
 	}
 
 	#label-1,
@@ -262,5 +274,19 @@ input.form-control:focus {
 	#label-5,
 	#inputTwo {
 		width: 30vw;
+		height: 3rem;
+	}
+
+	#secondColSection {
+		height: 23rem;
+	}
+
+	#priceSection2 {
+		margin-bottom: 2rem;
+	}
+
+	#reset {
+		width: 25rem;
+		height: 4rem;
 	}
 }
