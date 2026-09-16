@@ -208,7 +208,7 @@ inputOne.addEventListener("blur", function () {
 })
 
 inputThree.addEventListener("focus", function () {
-	inputGroupTwo.style.border = "2px rgb(255, 115, 0) solid"
+	inputGroupTwo.style.border = "2px hsl(172, 67%, 45%) solid"
 })
 
 inputThree.addEventListener("blur", function () {
