@@ -3,7 +3,6 @@
 
 <head>
 	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Tip Calculator App</title>
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -16,26 +15,27 @@
 </head>
 
 <body>
-	<section class="container" id="logo">
-		<img src="svg-files/logo.svg" alt="Logo">
-	</section>
-	<section class="container" id="main">
+	<header class="container" id="logo">
+		<img src="svg-files/logo.svg" alt="Splitter">
+	</header>
+	<main class="container" id="main">
+		<h1 class="visually-hidden">Tip Calculator</h1>
 		<div class="row">
 			<div class="col-xl-6" id="first-col">
 				<div class="container" id="first-col-container">
 					<div class="container" id="errorDiv">
-						<label for="bill" class="form-label">Bill</label>
-						<span class="lead" id="error">Can't be zero or less</span>
-						<span class="lead" id="errorTwo">Can't be empty</span>
+						<label for="inputOne" class="form-label">Bill</label>
+						<span class="lead" id="error" aria-live="polite">Can't be zero or less</span>
+						<span class="lead" id="errorTwo" aria-live="polite">Can't be empty</span>
 					</div>
 					<div class="input-group" id="input1">
-						<div class="input-group-text"><img src="svg-files/icon-dollar.svg" alt="Dollar Icon"></div>
-						<input type="number" class="form-control" placeholder="0" name="bill" id="inputOne" min="0"
-							required>
+						<div class="input-group-text"><img src="svg-files/icon-dollar.svg" alt=""></div>
+						<input type="number" class="form-control" placeholder="0" name="bill" id="inputOne"
+							min="0" step="0.01" required>
 					</div>
-					<section class="container">
+					<div class="container">
 						<span class="lead" id="selectTip">Select Tip %</span>
-						<div role="group" class="btn-group" id="buttons">
+						<div role="group" class="btn-group" id="buttons" aria-labelledby="selectTip">
 							<div class="container div">
 								<input type="radio" class="btn-check" name="options" id="option1" autocomplete="off">
 								<label class="btn" for="option1" id="label-1">5%</label>
@@ -57,57 +57,52 @@
 								<label class="btn" for="option5" id="label-5">50%</label>
 							</div>
 							<div class="container div" id="inputTwoDiv">
-								<input type="number" class="form-control" placeholder="Custom" id="inputTwo" min="0">
+								<input type="number" class="form-control" placeholder="Custom" id="inputTwo"
+									aria-label="Custom tip percentage" min="0" step="any">
 							</div>
 						</div>
-					</section>
+					</div>
 					<div class="container" id="errorDivTwo">
-						<label for="num" class="form-label">Number of People</label>
-						<span class="lead" id="errorThree">Can't be zero or less</span>
-						<span class="lead" id="errorFour">Can't be empty</span>
+						<label for="inputThree" class="form-label">Number of People</label>
+						<span class="lead" id="errorThree" aria-live="polite">Can't be zero or less</span>
+						<span class="lead" id="errorFour" aria-live="polite">Can't be empty</span>
 					</div>
 					<div class="input-group" id="input2">
-						<div class="input-group-text"><img src="svg-files/icon-person.svg" alt="Person Icon"></div>
+						<div class="input-group-text"><img src="svg-files/icon-person.svg" alt=""></div>
 						<input type="number" class="form-control" placeholder="0" name="num" id="inputThree"
-							role="button" min="0" required>
+							min="1" step="1" required>
 					</div>
 				</div>
 			</div>
 			<div class="col-xl-6" id="second-col">
-				<section class="container" id="secondColSection">
-					<section class="container" id="priceSection">
-						<section class="container d-inline">
+				<div class="container" id="secondColSection">
+					<div class="container" id="priceSection">
+						<div class="container d-inline">
 							<span class="lead d-block" id="tipAmount">Tip Amount</span>
 							<span class="lead d-block" id="person">/ person</span>
-						</section>
-						<section class="container" id="priceFlex">
+						</div>
+						<div class="container" id="priceFlex">
 							<span class="lead" id="price">$0.00</span>
-						</section>
-					</section>
-					<section class="container" id="priceSection2">
-						<section class="container">
+						</div>
+					</div>
+					<div class="container" id="priceSection2">
+						<div class="container">
 							<span class="lead d-block" id="total">Total</span>
 							<span class="lead d-block" id="Person">/ person</span>
-						</section>
-						<section class="container" id="priceFlex2">
+						</div>
+						<div class="container" id="priceFlex2">
 							<span class="lead" id="price2">$0.00</span>
-						</section>
-					</section>
-					<section class="container" id="buttonSection">
+						</div>
+					</div>
+					<div class="container" id="buttonSection">
 						<button class="btn" type="button" id="reset">RESET</button>
-					</section>
-				</section>
+					</div>
+				</div>
 			</div>
 		</div>
-	</section>
+	</main>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
 		integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-		crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-		integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-		crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
-		integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
 		crossorigin="anonymous"></script>
 	<script src="app.js"></script>
 </body>
